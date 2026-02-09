@@ -8,7 +8,7 @@ export default function Contact() {
     const { t } = useLanguage();
 
     const handleEmailClick = () => {
-        window.location.href = "mailto:shreya.jayani@example.com?subject=Opportunity%20Discussion";
+        window.location.href = "mailto:jayanishreya020@gmail.com?subject=Opportunity%20Discussion";
     };
 
     return (
@@ -67,7 +67,7 @@ export default function Contact() {
                 </div>
 
                 <div className="mt-20 pt-8 border-t border-jet text-center text-sm text-light-gray/40">
-                    <p>&copy; {new Date().getFullYear()} Shreya Jayani. Built with Next.js & Tailwind.</p>
+                    <p>&copy; {new Date().getFullYear()} Shreya Jayani.</p>
                 </div>
             </div>
         </section>

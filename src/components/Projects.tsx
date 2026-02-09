@@ -107,6 +107,7 @@ export default function Projects() {
                                     alt={project.title}
                                     fill
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-eerie-black-1 via-transparent to-transparent opacity-80" />
 
@@ -182,6 +183,7 @@ export default function Projects() {
                                     alt={selectedProject.gallery[currentImageIndex].desc}
                                     fill
                                     className="object-contain"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 60vw"
                                 />
 
                                 {selectedProject.gallery.length > 1 && (
@@ -212,7 +214,13 @@ export default function Projects() {
                                             className={`relative w-16 h-12 rounded-md overflow-hidden border-2 transition-all ${idx === currentImageIndex ? 'border-orange-yellow' : 'border-transparent opacity-60 hover:opacity-100'
                                                 }`}
                                         >
-                                            <Image src={img.src} alt="thumb" fill className="object-cover" />
+                                            <Image
+                                                src={img.src}
+                                                alt="thumb"
+                                                fill
+                                                className="object-cover"
+                                                sizes="64px"
+                                            />
                                         </button>
                                     ))}
                                 </div>
