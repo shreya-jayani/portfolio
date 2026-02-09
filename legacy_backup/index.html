@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/sjprofile.png" alt="Shreya Jayani" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Shreya Jayani">Shreya Jayani</h1>
+
+          <p class="title" data-i18n="role">Data Analyst</p>
+        </div>
+
+
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="contact_email">Email</p>
+
+              <a href="mailto:jayanishreya020@gmail.com" class="contact-link">jayanishreya020@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="contact_phone">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+49 152 03211527</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="contact_birthday">Birthday</p>
+
+              <time datetime="1982-06-23" data-i18n="contact_birthday_value">August 17, 2000</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title" data-i18n="contact_location">Location</p>
+
+              <address data-i18n="contact_location_value">Darmstadt, Germany</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/shreya-jayani/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.xing.com/profile/Shreya_Jayani" target="_blank" class="social-link">
+              <ion-icon name="logo-xing"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/shreya-jayani" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <!-- <li class="social-item">
+            <a href="https://x.com/shreya_jayani" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li> -->
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link="about" data-i18n="nav_about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume" data-i18n="nav_resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portfolio" data-i18n="nav_portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="zertifikate" data-i18n="nav_certificates">Zertifikate</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact" data-i18n="nav_digital_skills">Digital Skills</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-lang-btn>DE | EN</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title" data-i18n="about_title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p data-i18n="about_text_1">
+            Fundierte Kenntnisse in den Bereichen Datenanalyse, Berichterstellung und Business Intelligence mit
+            Erfahrung im Umgang
+            mit Python, SQL und Power BI. Praktische Erfahrung in der Erstellung interaktiver Dashboards und
+            KPI-Berichte zur Analyse
+            von Geschäftsprozessen und operativer Leistung.
+          </p>
+
+          <p data-i18n="about_text_2">
+            Kenntnisse in der Verarbeitung und Visualisierung komplexer Datensätze, um
+            strategische Handlungsempfehlungen abzuleiten. Ausgeprägtes analytisches Denkvermögen, strukturierte
+            Arbeitsweise und
+            digitale Kompetenz.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title" data-i18n="service_title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service_analyst_title">Data Analyst</h4>
+
+                <p class="service-item-text" data-i18n="service_analyst_text">
+                  Turning raw data into insights with Python, SQL & Power BI.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service_webdev_title">Web Development</h4>
+
+                <p class="service-item-text" data-i18n="service_webdev_text">
+                  Built responsive websites with HTML, CSS, PHP & MySQL.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service_app_title">Mobile apps</h4>
+
+                <p class="service-item-text" data-i18n="service_app_text">
+                  Developed mobile apps with user-friendly UI in Android Studio.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title" data-i18n="service_dashboard_title">Automation & Dashboards</h4>
+
+                <p class="service-item-text" data-i18n="service_dashboard_text">
+                  Creating interactive dashboards and automating data workflows.
+                </p>
+              </div>
+
+            </li>
+
+
+            <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+            <div id="resume">
+
+              <header>
+                <h2 class="h2 article-title" data-i18n="resume_title">Resume</h2>
+              </header>
+
+              <section class="timeline">
+
+                <div class="title-wrapper">
+                  <div class="icon-box">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3" data-i18n="education_title">Education</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="edu_1_place">Technische Universität Chemnitz</h4>
+
+                    <p class="timeline-text" data-i18n="edu_1_title">
+                      M.Sc. Automotive Software Engineering
+                    </p>
+
+                    <span data-i18n="edu_1_date">2021 — 2025 | Chemnitz, Germany</span>
+
+                    <p class="timeline-text" data-i18n="edu_1_text">
+                      Specialized in media encoding, mobile networks, clustering, automotive sensors, image
+                      understanding,
+                      and
+                      software service engineering.
+                    </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="edu_2_place">Auro University</h4>
+
+                    <p class="timeline-text" data-i18n="edu_2_title">
+                      B.Sc. Information Technology
+                    </p>
+
+                    <span data-i18n="edu_2_date">2018 — 2021 | Surat, India</span>
+
+                    <p class="timeline-text" data-i18n="edu_2_text">
+                      Focused on Python, Java, Business Intelligence, databases, and system design.
+                    </p>
+
+                  </li>
+
+                  <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"></h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li> -->
+
+                </ol>
+
+              </section>
+
+              <section class="timeline">
+
+                <div class="title-wrapper">
+                  <div class="icon-box">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3" data-i18n="experience_title">Experience</h3>
+                </div>
+
+                <ol class="timeline-list">
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_1_title">Automation Engineer</h4>
+
+                    <span data-i18n="exp_1_date"> Mai 2024 — Dezember 2024 | Grünkraut, Deutschland</span>
+
+                    <p class="timeline-text" data-i18n="exp_1_text">
+                      Entwickelte automatisierte CAD/PMI-Prüfprozesse mit datenbasierten Algorithmen zur schnelleren und
+                      genaueren Qualitätskontrolle.
+                    </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_2_title">Data Analyst</h4>
+
+                    <span data-i18n="exp_2_date">September 2023 — Februar 2024 | Karlsruhe, Deutschland</span>
+
+                    <p class="timeline-text" data-i18n="exp_2_text">
+                      Erstellte interaktive Dashboards und analysierte ÖPNV- sowie Verkehrsdaten zur Unterstützung
+                      datenbasierter Entscheidungen.
+                    </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_3_title">Software Developer</h4>
+
+                    <span data-i18n="exp_3_date">Januar 2021 — Juni 2021 | Surat, Indien</span>
+
+                    <p class="timeline-text" data-i18n="exp_3_text">
+                      Entwickelte Android-App zur Immobilienverwaltung mit PHP, MySQL-Anbindung und benutzerfreundlichem
+                      UI/UX.
+                    </p>
+
+                  </li>
+
+                  <li class="timeline-item">
+
+                    <h4 class="h4 timeline-item-title" data-i18n="exp_4_title">Software Developer</h4>
+
+                    <span data-i18n="exp_4_date">Januar 2020 — März 2020 | Surat, Indien</span>
+
+                    <p class="timeline-text" data-i18n="exp_4_text">
+                      Erstellte Hall-of-Fame-Website mit übersichtlichem UI/UX zur Darstellung akademischer Leistungen
+                    </p>
+
+                  </li>
+
+                </ol>
+
+              </section>
+
+              <section class="skill">
+
+                <h3 class="h3 skills-title" data-i18n="skills_page_title">Digital Skills</h3>
+
+                <ul class="service-list">
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_prog_title">Programmiersprachen & Tools</h4>
+                      <p class="service-item-text" data-i18n="skill_prog_list">
+                        Python, R, VBA, C/C++, C#, Java, AWS, HTML/CSS, Azure, PHP, SAP, Latex
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_data_title">Datenanalyse & BI</h4>
+                      <p class="service-item-text" data-i18n="skill_data_list">
+                        Power BI, Tableau, Looker, Excel(Pivot, VBA-Makros, Power Query), KPI-Tracking, Databricks,
+                        Datenvisualisierung, DAX, Datenvalidierung, Ggplot2, Datenstrukturen
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_ml_title">KI und ML</h4>
+                      <p class="service-item-text" data-i18n="skill_ml_list">
+                        Scikit-learn, Regressionsanalyse, Clustering, Datenmodellierung, Klassifikationsmodelle, Feature
+                        Engineering
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_cloud_title">Cloud Technologien</h4>
+                      <p class="service-item-text" data-i18n="skill_cloud_list">
+                        AWS, Microsoft Azure, Google Cloud Platform
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_etl_title">ETL & Datenverarbeitung</h4>
+                      <p class="service-item-text" data-i18n="skill_etl_list">
+                        Data Wrangling, SQL, ETL-Prozesse, Data Warehousing, JSON
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="service-item">
+                    <div class="service-content-box">
+                      <h4 class="h4 service-item-title" data-i18n="skill_pm_title">Projektmanagement & Entwicklung</h4>
+                      <p class="service-item-text" data-i18n="skill_pm_list">
+                        Scrum, Kanban, Trello, Asana, Jira, Slack, Anforderungsanalyse, Projekt-Risikomanagement,
+                        Projektabschluss
+                      </p>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </section>
+
+            </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title" data-i18n="portfolio_title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-traffic-1.png" alt="traffic survey" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-i18n="project_traffic_title">Traffic Survey & Data Mgmt</h3>
+
+                <p class="project-category" data-i18n="project_traffic_category">Data Analysis</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development" data-project-item>
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-business-kpi.png" alt="business kpi dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-i18n="project_kpi_title">Business Performance KPI Dashboard</h3>
+
+                <p class="project-category" data-i18n="project_kpi_category">Business Intelligence</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CERTIFICATES
+      -->
+
+      <article class="blog" data-page="zertifikate">
+
+        <header>
+          <h2 class="h2 article-title" data-i18n="certificates_title">Zertifikate</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="https://coursera.org/share/b6f638c8e031d15ff78aaadcfcf1f782" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Zertifikate_GDA.png" alt="Google Data Analytics" loading="lazy" width="40">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Google</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-i18n="cert_gda_title">Google Data Analytics</h3>
+
+                  <p class="blog-text" data-i18n="cert_professional">
+                    Professional Certificate
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://coursera.org/share/1af2f74057024e1ad34bb012dc940dbb" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Zertifikate_GPM.jpg" alt="Google Project Management" loading="lazy"
+                    width="40">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Google</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-i18n="cert_gpm_title">Google Project Management</h3>
+
+                  <p class="blog-text" data-i18n="cert_professional">
+                    Professional Certificate
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://coursera.org/share/04895eae538983db7fa304445a1bb4f7" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Zertifikate_DDDPBI.jpg" alt="Data Driven Decisions with Power BI"
+                    loading="lazy" width="40">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-i18n="cert_dddpbi_title">Data Driven Decisions with Power BI</h3>
+
+                  <p class="blog-text" data-i18n="cert_course">
+                    Course Certificate
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://coursera.org/share/a061ebbfb835b8c8f34940219385da0f" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Zertifikate_Python.jpg" alt="Python for Everybody" loading="lazy"
+                    width="40">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-i18n="cert_python_title">Python for Everybody</h3>
+
+                  <p class="blog-text" data-i18n="cert_specialization">
+                    Specialization
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            <li class="blog-post-item">
+              <a href="https://coursera.org/share/911dfd11d8aa945c854d4426cc35cb37" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Zertifikate_DSQL.jpg" alt="Databases and SQL for Data Science with Python"
+                    loading="lazy" width="40">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Coursera</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024">2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title" data-i18n="cert_sql_title">Databases and SQL for Data Science with
+                    Python</h3>
+
+                  <p class="blog-text" data-i18n="cert_course">
+                    Course Certificate
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+
+
+      <!--
+      - #PROJECT MODAL
+    -->
+
+      <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal project-modal-content">
+
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-content-wrapper">
+            <h2 class="h2 modal-title" data-modal-title></h2>
+
+            <div class="modal-gallery" data-modal-gallery></div>
+
+            <div class="modal-text" data-modal-text></div>
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
